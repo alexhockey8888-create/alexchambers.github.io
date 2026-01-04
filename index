@@ -1,1 +1,71 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Projects Showcase</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>My CSS Projects</h1>
+    <p>Replicating designs using HTML & CSS only</p>
+  </header>
+
+  <main class="projects">
+    <!-- Project 1: Football Field -->
+    <section class="project football-field">
+      <h2>Football Field</h2>
+      <div class="field">
+        <img src="images/football_field.jpg" alt="Football Field">
+        <img src="images/tic-tac-toe.png" alt="Tic Tac Toe" class="overlay">
+      </div>
+    </section>
+
+    <!-- Project 2: Image Card with Hover -->
+    <section class="project hover-card">
+      <h2>Hover Card</h2>
+      <div class="card">
+        <img src="images/image1.jpg" alt="Sample">
+        <div class="card-text">Hover to see effect</div>
+      </div>
+    </section>
+
+    <!-- Project 3: CSS Grid Gallery -->
+    <section class="project grid-gallery">
+      <h2>Grid Gallery</h2>
+      <div class="gallery">
+        <img src="images/image2.jpg" alt="">
+        <img src="images/image3.jpg" alt="">
+        <img src="images/image4.jpg" alt="">
+        <img src="images/image1.jpg" alt="">
+      </div>
+    </section>
+
+    <!-- Project 4: Flexbox Layout -->
+    <section class="project flex-layout">
+      <h2>Flexbox Layout</h2>
+      <div class="flex-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+      </div>
+    </section>
+
+    <!-- Project 5: CSS Shapes -->
+    <section class="project css-shapes">
+      <h2>CSS Shapes</h2>
+      <div class="circle"></div>
+      <div class="triangle"></div>
+    </section>
+
+    <!-- Project 6: Animated Button -->
+    <section class="project animated-button">
+      <h2>Animated Button</h2>
+      <button class="btn">Hover Me</button>
+    </section>
+  </main>
+</body>
+</html>
+
