@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Large Cats Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    /* Gallery container */
+    .gallery-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Each gallery item */
+    .gallery-item {
+        background: white;
+        padding: 5px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        transition: transform 0.2s ease;
+    }
+
+    .gallery-item:hover {
+        transform: scale(1.05);
+    }
+
+    /* Images */
+    .gallery-item img {
+        height: 200px; /* Same height for all */
+        object-fit: contain; /* Prevents distortion */
+        display: block;
+        max-width: 100%;
+        border-radius: 5px;
+    }
+
+    /* Caption */
+    .caption {
+        font-size: 0.9em;
+        color: #555;
+        margin-top: 5px;
+    }
+</style>
+</head>
+<body>
+
+<h1>Large Cats Gallery</h1>
+
+<div class="gallery-container">
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Lion_waiting_in_Namibia.jpg" alt="Lion">
+        <div class="caption">Lion — Public Domain (Wikimedia Commons)</div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Tiger.50.jpg" alt="Tiger">
+        <div class="caption">Tiger — CC BY-SA 3.0 (Wikimedia Commons)</div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0f/Cheetah_Kruger.jpg" alt="Cheetah">
+        <div class="caption">Cheetah — Public Domain (Wikimedia Commons)</div>
+    </div>
+    <div class="gallery-item">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Panthera_onca_at_the_Toronto_Zoo_2.jpg" alt="Jaguar">
+        <div class="caption">Jaguar — CC BY-SA 4.0 (Wikimedia Commons)</div>
+    </div>
+</div>
+
+</body>
+</html>
