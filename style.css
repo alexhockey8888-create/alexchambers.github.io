@@ -1,1 +1,129 @@
 
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Project 1: Football Field */
+.field {
+  position: relative;
+}
+.field img {
+  width: 100%;
+  display: block;
+}
+.field img.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+/* Project 2: Hover Card */
+.card {
+  position: relative;
+  overflow: hidden;
+}
+.card img {
+  width: 100%;
+  display: block;
+}
+.card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+.card:hover .card-text {
+  transform: translateY(0);
+}
+
+/* Project 3: Grid Gallery */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+/* Project 4: Flexbox Layout */
+.flex-container {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+.box {
+  background: #007bff;
+  color: #fff;
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+  border-radius: 6px;
+}
+
+/* Project 5: CSS Shapes */
+.circle {
+  width: 100px;
+  height: 100px;
+  background: #ff5722;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 100px solid #4caf50;
+}
+
+/* Project 6: Animated Button */
+.btn {
+  padding: 10px 20px;
+  background: #673ab7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+  background: #512da8;
+  transform: scale(1.1);
+}
+
